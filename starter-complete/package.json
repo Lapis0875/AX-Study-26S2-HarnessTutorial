@@ -1,0 +1,16 @@
+{
+  "name": "l03-bookmarks-complete",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "vite --configLoader native",
+    "build": "vite build --configLoader native",
+    "preview": "vite preview --configLoader native",
+    "test:baseline": "node --test tests/baseline.test.js",
+    "test:target": "node --test tests/target.test.js",
+    "test": "node --test tests/baseline.test.js tests/target.test.js tests/duplicate.test.js"
+  },
+  "devDependencies": { "vite": "8.3.1" }
+}
