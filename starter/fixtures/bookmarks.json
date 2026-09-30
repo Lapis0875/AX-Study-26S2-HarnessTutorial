@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "sample-001",
+      "url": "https://example.com/read-later/article-1",
+      "title": "주말에 읽을 글"
+    }
+  ]
+}

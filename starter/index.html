@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="다시 찾고 싶은 웹페이지를 제목과 주소로 저장하는 L03 교육용 로컬 즐겨찾기입니다." />
+    <link rel="icon" href="data:," />
+    <title>나만의 즐겨찾기 웹페이지</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="masthead">
+        <span class="wordmark"><svg viewBox="0 0 24 28" width="24" height="28" aria-hidden="true"><path d="M4 2h16v24l-8-5-8 5z" fill="currentColor" /></svg> MY BOOKMARKS</span>
+        <span class="lesson">AX STUDY <span>/</span> L03</span>
+      </header>
+      <main>
+        <section class="intro" aria-labelledby="page-title">
+          <p class="eyebrow">교육용 로컬 샘플</p>
+          <h1 id="page-title">나만의 <span>즐겨찾기 웹페이지</span></h1>
+          <p class="intro-copy">다시 찾고 싶은 페이지를 한곳에.<br />웹주소와 기억하기 좋은 제목을 남겨 보세요.</p>
+        </section>
+        <div class="workspace">
+          <section class="compose" aria-labelledby="form-title">
+            <div class="section-label"><span>01 / SAVE</span></div>
+            <h2 id="form-title">즐겨찾기 추가</h2>
+            <form id="bookmark-form" novalidate>
+              <div class="field">
+                <label for="url">웹주소 <span class="required">필수</span></label>
+                <input id="url" name="url" type="text" inputmode="url" autocomplete="url" spellcheck="false" placeholder="https://example.com" required aria-describedby="url-help url-error" />
+                <p id="url-help" class="help">http:// 또는 https://로 시작하는 주소</p>
+                <p id="url-error" class="field-error"></p>
+              </div>
+              <div class="field">
+                <label for="title">제목 <span class="required">필수</span></label>
+                <input id="title" name="title" type="text" placeholder="어떤 페이지인가요?" required aria-describedby="title-error" />
+                <p id="title-error" class="field-error"></p>
+              </div>
+              <button class="primary" type="submit">즐겨찾기 추가 <span aria-hidden="true">＋</span></button>
+            </form>
+            <p id="notice" class="notice" role="status" aria-live="polite" aria-atomic="true"></p>
+            <p class="local-note">이 브라우저에 저장됩니다.<br />같은 접속 주소에서 다시 열어 주세요.</p>
+          </section>
+          <section class="collection" aria-labelledby="list-title">
+            <div class="section-label"><span>02 / REVISIT</span><span>나의 작은 자료함</span></div>
+            <div class="list-heading"><h2 id="list-title">저장한 즐겨찾기</h2><span id="count" class="count">불러오는 중</span></div>
+            <p class="list-help">제목을 누르면 새 탭에서 열립니다.</p>
+            <ol id="bookmarks" class="bookmarks"></ol>
+            <p id="empty" class="empty" hidden></p>
+          </section>
+        </div>
+        <section class="reset-area" aria-label="실습 데이터 초기화">
+          <div><h2>처음부터 다시 실습하려면</h2><p>확인 후 수업용 목록을 예시 한 개로 되돌립니다.</p></div>
+          <button id="reset" class="secondary" type="button">초기 예제로 되돌리기</button>
+        </section>
+      </main>
+      <footer><span>AX STUDY · 나만의 즐겨찾기</span><span>내가 고른 페이지, 내가 붙인 제목.</span></footer>
+    </div>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>

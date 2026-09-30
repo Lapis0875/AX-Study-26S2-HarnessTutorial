@@ -1,0 +1,14 @@
+# Installed dependencies and build output
+node_modules/
+dist/
+
+# Instructor materials and internal plans
+/instructor-qa/
+/instructor-notes/
+/Plans/
+/releases/
+/starter/AGENTS.md
+
+# Agent evidence and macOS metadata
+/.omo/
+.DS_Store
